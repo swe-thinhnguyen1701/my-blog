@@ -1,0 +1,29 @@
+/* ARTICLE */
+article{
+    padding: 8px 10px 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.article__title{
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+}
+
+.article__content{
+    margin: 10px;
+    min-height: 70px;
+}
+
+@media screen and (min-width: 768px){
+    .article__title{
+        font-size: 1.45rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .article__title{
+        font-size: 1.5rem;
+    }
+}
