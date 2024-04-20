@@ -105,13 +105,18 @@ form {
   display: none;
 }
 
-@media screen and (min-width: 768px){
-    .divider--vertical{
-        display: block;
-    }
+@media screen and (min-width: 768px) {
+  .divider--vertical {
+    display: block;
+  }
 }
 
 /* BUTTON */
+button{
+    background: none;
+    border: none;
+}
+
 .btn {
   background-color: var(--btn-background-color);
   color: white;
@@ -123,12 +128,29 @@ form {
   width: 100%;
 }
 
+/* ICON */
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
 .back-icon {
   display: inline-block;
   transform: rotate(180deg);
 }
 
-/* LOGO */
+/* NAV */
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* VENUS */
 .venus-background {
   display: flex;
   justify-content: center;
@@ -148,60 +170,60 @@ form {
   max-width: 550px;
 }
 
-@media screen and (min-width: 768px){
-    .venus-background{
-        margin: 40px;
-        width: 40vw;
-        height: 40vw;
-    }
+@media screen and (min-width: 768px) {
+  .venus-background {
+    margin: 40px;
+    width: 40vw;
+    height: 40vw;
+  }
 }
 
 /* USER OPINION */
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.user-opinion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    max-width: 800px;
-    padding: 0 1.2rem;
+.user-opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  padding: 0 1.2rem;
 }
 
-.user-opinion h2{
-    margin-top: 25px;
-    margin-bottom: 15px;
+.user-opinion h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px){
-    main{
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0;
-    }
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
 
-    main .divider{
-        display: none;
-    }
+  main .divider {
+    display: none;
+  }
 
-    main .divider--vertical{
-        height: 100vh;
-    }
-    
-    .user-opinion{
-        padding: 0 2.2rem;
-        width: 50vw;
-    }
+  main .divider--vertical {
+    height: 100vh;
+  }
+
+  .user-opinion {
+    padding: 0 2.2rem;
+    width: 50vw;
+  }
 }
 
 /* FOOTER */
-footer{
-    margin: 40px;
-    color: lightgrey;
-    text-align: center;
+footer {
+  margin: 40px;
+  color: lightgrey;
+  text-align: center;
 }
