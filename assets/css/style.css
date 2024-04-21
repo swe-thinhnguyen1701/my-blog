@@ -62,6 +62,32 @@ h2 {
   }
 }
 
+/* MODE CHANGE */
+.light{
+    background-color: white;
+    color: black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.dark .divider--vertical{
+    border-color: white;
+}
+
+.dark button{
+    background-color: black;
+}
+
+/* SWITCHER */
+#mode-switcher{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
 /* FORM */
 form {
   width: 100%;
@@ -91,8 +117,8 @@ form {
 
 /* DIVIDER */
 .divider {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
   height: 7px;
   width: 100%;
 }
@@ -115,7 +141,6 @@ form {
 button{
     background: none;
     border: none;
-    /* width: 100px; */
 }
 
 .btn {
