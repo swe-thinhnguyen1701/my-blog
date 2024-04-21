@@ -81,6 +81,11 @@ h2 {
     background-color: black;
 }
 
+.dark .btn{
+    background-color: white;
+    color: black;
+}
+
 /* SWITCHER */
 #mode-switcher{
     opacity: 0;
@@ -143,6 +148,10 @@ button{
     border: none;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .btn {
   background-color: var(--btn-background-color);
   color: white;
@@ -152,8 +161,14 @@ button{
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding: 3px 10px;
+  padding: 10px;
   border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
 }
 
 /* ICON */
