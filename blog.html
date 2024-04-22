@@ -19,19 +19,21 @@
             ><div class="back-icon">&#10145;</div>
             Back</a
           >
-          <button id="mode-change">
-            <img
-              src="/assets/img/light-mode.png"
-              alt="Sun icon"
-              id="mode-icon"
-              class="icon"
-            />
-          </button>
+          <label class="switch">
+            <input type="checkbox" id="mode-switcher" />
+            <span
+              ><img
+                src="/assets/img/light-mode.png"
+                alt="Sun icon"
+                id="mode-icon"
+                class="icon"
+            /></span>
+          </label>
         </div>
       </nav>
     </header>
     <div class="divider"></div>
-    <main>
+    <main id="user-opinions">
       <article>
         <div class="article__title">This is title</div>
         <div class="article__content">This is content area</div>
@@ -44,12 +46,16 @@
       </article>
     </main>
     <div class="divider"></div>
-    <footer>Copryright &copy; 2024 Thinh Nguyen
+    <footer>
+      Copryright &copy; 2024 Thinh Nguyen
       <ul class="list">
         <li class="list__item"><strong>Portfolio:</strong> Thinh Nguyen</li>
         <li class="list__item"><strong>Blog:</strong> Full-Stack Blog</li>
-        <li class="list__item"><strong>Email:</strong> swe.thinhnguyen@gmail.com</li>
+        <li class="list__item">
+          <strong>Email:</strong> swe.thinhnguyen@gmail.com
+        </li>
       </ul>
     </footer>
+    <script src="./assets/js/blog.js"></script>
   </body>
 </html>

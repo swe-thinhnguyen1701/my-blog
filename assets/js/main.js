@@ -2,7 +2,7 @@ const modeSwitcher = document.getElementById("mode-switcher");
 const modeIcon = document.getElementById("mode-icon");
 const submit = document.getElementById("submit");
 
-const data = [];
+let data = JSON.parse(localStorage.getItem("data")) === null ? [] : JSON.parse(localStorage.getItem("data"));
 
 let mode = "light";
 
@@ -18,20 +18,24 @@ modeSwitcher.addEventListener("click", function () {
   }
 });
 
-submit.addEventListener("click", function () {
+submit.addEventListener("click", function (event) {
+  event.preventDefault();
   const userInput = {
-    userName: "",
+    author: "",
     title: "",
     content: "",
   };
 
-  userInput.userName = document.getElementById("user-name").value;
+  userInput.author = document.getElementById("author").value;
   userInput.title = document.getElementById("title").value;
   userInput.content = document.getElementById("content").value;
 
-  data.push(userInput);
-  localStorage.setItem("data", JSON.stringify(data));
-
-  window.location.href = "./../blog.html";
-  console.log("Redicrect", window.location);
+  if(userInput.author.trim().length != 0 && userInput.title.trim().length != 0 && userInput.content.trim().length != 0){
+    data.push(userInput);
+    localStorage.setItem("data", JSON.stringify(data));
+  
+    window.location.href = "blog.html";
+  }else{
+    window.alert("User name, title, and content CANNOT be empty");
+  }
 });
