@@ -86,6 +86,10 @@ h2 {
     color: black;
 }
 
+.dark .venus-background{
+  background: linear-gradient(rgba(188,180,203,1) 0%, rgba(162,151,183,1) 23%, rgba(162,151,183,1) 80%, rgba(77,69,87,1) 100%);
+}
+
 /* SWITCHER */
 #mode-switcher{
     opacity: 0;

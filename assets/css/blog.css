@@ -55,6 +55,19 @@ article{
     }
 }
 
+/* Link */
+.link{
+    color: inherit;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link:visited{
+    color: inherit;
+}
+
 /* MAIN */
 main{
     flex-direction: column;
