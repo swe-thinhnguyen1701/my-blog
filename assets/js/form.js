@@ -10,11 +10,11 @@ submit.addEventListener("click", function (event) {
       content: "",
     };
   
-    userInput.author = document.getElementById("author").value;
-    userInput.title = document.getElementById("title").value;
-    userInput.content = document.getElementById("content").value;
+    userInput.author = document.getElementById("author").value.trim();
+    userInput.title = document.getElementById("title").value.trim();
+    userInput.content = document.getElementById("content").value.trim();
   
-    if(userInput.author.trim().length != 0 && userInput.title.trim().length != 0 && userInput.content.trim().length != 0){
+    if(userInput.author.length != 0 && userInput.title.length != 0 && userInput.content.length != 0){
       data.push(userInput);
       localStorage.setItem("data", JSON.stringify(data));
     
